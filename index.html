@@ -55,7 +55,7 @@
     />
     <link
       rel="stylesheet"
-      href="./_next/static/css/9ded0e6310707dc4.css"
+      href="./_next/static/css/adc67e1e93fa1405.css"
       data-precedence="next"
     />
     <link
@@ -65,11 +65,11 @@
       href="./_next/static/chunks/webpack-2d1f84a2b9aa3e79.js"
     />
     <script
-      src="./_next/static/chunks/4bd1b696-c34d58ea904b7f80.js"
+      src="./_next/static/chunks/4bd1b696-8d6c88c4b1f0a7c0.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/215-32f11ceabdafe2e0.js"
+      src="./_next/static/chunks/215-606af6fc0aec14d7.js"
       async=""
     ></script>
     <script
@@ -81,31 +81,31 @@
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/c16f53c3-7ed00420f56d2053.js"
+      src="./_next/static/chunks/c16f53c3-794864bdae64fcce.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/920-c497346d45a9deb4.js"
+      src="./_next/static/chunks/920-42150e76bc8c1f3a.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/376-3679bda538912397.js"
+      src="./_next/static/chunks/376-21af4e3d88e18d2f.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/805-2eedd134218e842b.js"
+      src="./_next/static/chunks/836-ed43ac3c8bb5628c.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/app/layout-f9a2754a9146a50f.js"
+      src="./_next/static/chunks/app/layout-6cb6c8635beb10c3.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/375-3efc23e3c3da1813.js"
+      src="./_next/static/chunks/375-245df6e7a52cd19f.js"
       async=""
     ></script>
     <script
-      src="./_next/static/chunks/app/(Home)/page-109f4d0b86997f78.js"
+      src="./_next/static/chunks/app/(Home)/page-53f606383d43dc67.js"
       async=""
     ></script>
     <link
@@ -162,8 +162,36 @@
     ></script>
   </head>
   <body
-    class="w-[95%] lg:w-[90%] mx-auto py-5 bg-gray-200 text-primary relative"
+    class="w-[95%] lg:w-[90%] mx-auto py-5 bg-gray-200 dark:bg-gray-900 text-primary dark:text-white relative"
   >
+    <script>
+      ((e, t, n, r, a, o, i, l) => {
+        let s = document.documentElement,
+          c = ["light", "dark"];
+        function u(t) {
+          (Array.isArray(e) ? e : [e]).forEach((e) => {
+            let n = "class" === e,
+              r = n && o ? a.map((e) => o[e] || e) : a;
+            n
+              ? (s.classList.remove(...r), s.classList.add(t))
+              : s.setAttribute(e, t);
+          }),
+            l && c.includes(t) && (s.style.colorScheme = t);
+        }
+        if (r) u(r);
+        else
+          try {
+            let e = localStorage.getItem(t) || n,
+              r =
+                i && "system" === e
+                  ? window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light"
+                  : e;
+            u(r);
+          } catch (e) {}
+      })("class", "theme", "system", null, ["light", "dark"], null, true, true);
+    </script>
     <div>
       <div class="lg:flex items-center justify-between">
         <div class="flex items-center justify-center text-sm font-medium">
@@ -183,7 +211,7 @@
             ></path>
           </svg>
           <p>
-            <a href="#" class="font-bold text-secondry uppercase"
+            <a href="#" class="text-secondry font-bold uppercase"
               >Donate<!-- --> </a
             >tải tốc độ cao chỉ 1000 donate/1game
           </p>
@@ -193,7 +221,7 @@
         >
           <input
             type="text"
-            class="rounded-s-md w-full pl-3"
+            class="rounded-s-md w-full pl-3 dark:bg-[#262a30]"
             placeholder="Tìm kiếm game..."
           /><button
             class="size-10 rounded-e-md flex items-center justify-center bg-black"
@@ -218,7 +246,7 @@
         <div class="flex items-center gap-6">
           <div class="w-fit flex gap-1 p-1 bg-gray-400 rounded-full">
             <button
-              class="bg-white text-secondry rounded-full flex items-center justify-center p-1"
+              class="bg-none text-gray-700 rounded-full flex items-center justify-center p-1"
             >
               <svg
                 aria-hidden="true"
@@ -236,7 +264,7 @@
                 ></path>
               </svg></button
             ><button
-              class="bg-none text-gray-700 rounded-full flex items-center justify-center p-1"
+              class="bg-black text-orange-600 rounded-full flex items-center justify-center p-1"
             >
               <svg
                 aria-hidden="true"
@@ -369,9 +397,9 @@
           <header>
             <nav
               aria-label="Global"
-              class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+              class="max-w-7xl lg:px-8 flex items-center justify-between p-6 mx-auto"
             >
-              <div class="flex lg:hidden">
+              <div class="lg:hidden flex">
                 <button
                   type="button"
                   class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
@@ -394,15 +422,15 @@
                   </svg>
                 </button>
               </div>
-              <div class="hidden lg:flex lg:gap-x-12">
+              <div class="lg:flex lg:gap-x-12 hidden">
                 <a
                   href="#"
-                  class="text-sm/6 font-bold uppercase hover:text-secondry"
+                  class="text-sm/6 hover:text-secondry font-bold uppercase"
                   >Game tải nhiều</a
                 >
                 <div class="relative" data-headlessui-state="">
                   <button
-                    class="flex items-center gap-x-1 text-sm/6 font-bold uppercase hover:text-secondry"
+                    class="gap-x-1 text-sm/6 hover:text-secondry flex items-center font-bold uppercase"
                     type="button"
                     aria-expanded="false"
                     data-headlessui-state=""
@@ -428,25 +456,25 @@
                   "
                 ></span
                 ><a
-                  href="./category.html"
-                  class="text-sm/6 font-bold uppercase hover:text-secondry"
+                  href="./category"
+                  class="text-sm/6 hover:text-secondry font-bold uppercase"
                   >Game việt hóa</a
                 ><a
                   href="#"
-                  class="text-sm/6 font-bold uppercase hover:text-secondry"
+                  class="text-sm/6 hover:text-secondry font-bold uppercase"
                   >Phần mềm</a
                 ><a
                   href="#"
-                  class="text-sm/6 font-bold uppercase hover:text-secondry"
+                  class="text-sm/6 hover:text-secondry font-bold uppercase"
                   >Nạp tải vip</a
                 ><a
                   href="#"
-                  class="text-sm/6 font-bold uppercase hover:text-secondry"
+                  class="text-sm/6 hover:text-secondry font-bold uppercase"
                   >Nhiệm vụ</a
                 >
                 <div class="relative" data-headlessui-state="">
                   <button
-                    class="flex items-center gap-x-1 text-sm/6 font-bold uppercase hover:text-secondry"
+                    class="gap-x-1 text-sm/6 hover:text-secondry flex items-center font-bold uppercase"
                     type="button"
                     aria-expanded="false"
                     data-headlessui-state=""
@@ -563,7 +591,7 @@
           </div>
           <div>
             <button
-              class="size-10 top-[45%] -left-5 hover:bg-orange-700/80 hover:text-white absolute z-10 flex items-center justify-center bg-white rounded-full"
+              class="size-10 top-[45%] -left-5 hover:bg-orange-700/80 hover:text-white absolute z-10 flex items-center justify-center bg-white rounded-full dark:bg-amber-950"
             >
               <svg
                 aria-hidden="true"
@@ -581,7 +609,7 @@
                 ></path>
               </svg></button
             ><button
-              class="size-10 top-[45%] -right-5 hover:bg-orange-700/80 hover:text-white absolute z-10 flex items-center justify-center bg-white rounded-full"
+              class="size-10 top-[45%] -right-5 hover:bg-orange-700/80 hover:text-white absolute z-10 flex items-center justify-center bg-white rounded-full dark:bg-amber-950"
             >
               <svg
                 aria-hidden="true"
@@ -602,7 +630,9 @@
           </div>
         </div>
         <div class="lg:grid hidden grid-cols-3 gap-3 py-4">
-          <div class="flex items-center gap-10 bg-white">
+          <div
+            class="dark:bg-dark-bg-primary dark:border border-dark-border flex items-center gap-10 bg-white rounded-lg"
+          >
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2LtxIuLDmHfP5Hd_ZsUQuyZYXWdAieA3GA&amp;s"
               alt=""
@@ -611,12 +641,16 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-lg font-bold text-blue-800 uppercase"
+                class="hover:text-secondry text-primary dark:text-white block text-lg font-bold uppercase"
                 >returnal</a
-              ><a href="#" class="block text-lg text-orange-700">Xem thêm</a>
+              ><a href="#" class="dark:text-white block text-lg text-orange-700"
+                >Xem thêm</a
+              >
             </div>
           </div>
-          <div class="flex items-center gap-10 bg-white">
+          <div
+            class="dark:bg-dark-bg-primary dark:border border-dark-border flex items-center gap-10 bg-white rounded-lg"
+          >
             <img
               src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/146d81d3-58f4-45c2-957e-1dc554a4a869/dg9z2p1-ee2e6be5-84ab-4b76-ad1e-e005cd4d0878.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE0NmQ4MWQzLTU4ZjQtNDVjMi05NTdlLTFkYzU1NGE0YTg2OVwvZGc5ejJwMS1lZTJlNmJlNS04NGFiLTRiNzYtYWQxZS1lMDA1Y2Q0ZDA4NzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5LPXUmy1CPfDz-JVIjoPthoit--snXK2TuPo1fseL8s"
               alt=""
@@ -625,12 +659,16 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-lg font-bold text-blue-800 uppercase"
+                class="hover:text-secondry text-primary dark:text-white block text-lg font-bold uppercase"
                 >StarField</a
-              ><a href="#" class="block text-lg text-orange-700">Xem thêm</a>
+              ><a href="#" class="dark:text-white block text-lg text-orange-700"
+                >Xem thêm</a
+              >
             </div>
           </div>
-          <div class="flex items-center gap-10 bg-white">
+          <div
+            class="dark:bg-dark-bg-primary dark:border border-dark-border flex items-center gap-10 bg-white rounded-lg"
+          >
             <img
               src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/e87d432c-0c31-4673-912d-407d8ee09362/dgr1pya-91f28ea0-45a1-444e-9c96-4f61073c03c6.png/v1/fit/w_828,h_828/palworld_ico_by_nc831_by_darknc831_dgr1pya-414w-2x.png"
               alt=""
@@ -639,12 +677,16 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-lg font-bold text-blue-800 uppercase"
+                class="hover:text-secondry text-primary dark:text-white block text-lg font-bold uppercase"
                 >Palworld</a
-              ><a href="#" class="block text-lg text-orange-700">Xem thêm</a>
+              ><a href="#" class="dark:text-white block text-lg text-orange-700"
+                >Xem thêm</a
+              >
             </div>
           </div>
-          <div class="flex items-center gap-10 bg-white">
+          <div
+            class="dark:bg-dark-bg-primary dark:border border-dark-border flex items-center gap-10 bg-white rounded-lg"
+          >
             <img
               src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aacf7545-f3cd-48d5-b931-28ce4a28db0e/dc6k0s9-29018cf9-7ab1-4498-bd6a-7b6ef5fbbbd4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhY2Y3NTQ1LWYzY2QtNDhkNS1iOTMxLTI4Y2U0YTI4ZGIwZVwvZGM2azBzOS0yOTAxOGNmOS03YWIxLTQ0OTgtYmQ2YS03YjZlZjVmYmJiZDQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Sq5qv0lu98sAX0hWF0m97guzJSxrHteqTDLBeKj23To"
               alt=""
@@ -653,12 +695,16 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-lg font-bold text-blue-800 uppercase"
+                class="hover:text-secondry text-primary dark:text-white block text-lg font-bold uppercase"
                 >sea of thieves</a
-              ><a href="#" class="block text-lg text-orange-700">Xem thêm</a>
+              ><a href="#" class="dark:text-white block text-lg text-orange-700"
+                >Xem thêm</a
+              >
             </div>
           </div>
-          <div class="flex items-center gap-10 bg-white">
+          <div
+            class="dark:bg-dark-bg-primary dark:border border-dark-border flex items-center gap-10 bg-white rounded-lg"
+          >
             <img
               src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ef02abe3-63cc-4dfa-8eab-5543cf3bcf4f/de5pgkr-1c39f714-8a7c-4972-a69f-3ecc5eae5241.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VmMDJhYmUzLTYzY2MtNGRmYS04ZWFiLTU1NDNjZjNiY2Y0ZlwvZGU1cGdrci0xYzM5ZjcxNC04YTdjLTQ5NzItYTY5Zi0zZWNjNWVhZTUyNDEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wHon20tP06HDzXZlqStF-t49nzmKSMNJsQnDj2QYA_k"
               alt=""
@@ -667,12 +713,16 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-lg font-bold text-blue-800 uppercase"
+                class="hover:text-secondry text-primary dark:text-white block text-lg font-bold uppercase"
                 >prince of persia</a
-              ><a href="#" class="block text-lg text-orange-700">Xem thêm</a>
+              ><a href="#" class="dark:text-white block text-lg text-orange-700"
+                >Xem thêm</a
+              >
             </div>
           </div>
-          <div class="flex items-center gap-10 bg-white">
+          <div
+            class="dark:bg-dark-bg-primary dark:border border-dark-border flex items-center gap-10 bg-white rounded-lg"
+          >
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkxsWvwjSNjVwMXTNyNLGW7L0JD5SqlT9imw&amp;s"
               alt=""
@@ -681,9 +731,11 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-lg font-bold text-blue-800 uppercase"
+                class="hover:text-secondry text-primary dark:text-white block text-lg font-bold uppercase"
                 >Hogwarts legacy</a
-              ><a href="#" class="block text-lg text-orange-700">Xem thêm</a>
+              ><a href="#" class="dark:text-white block text-lg text-orange-700"
+                >Xem thêm</a
+              >
             </div>
           </div>
         </div>
@@ -694,14 +746,16 @@
           id="span-title"
         >
           <p
-            class="text-2xl font-bold px-5 bg-gray-200 ml-8 uppercase inline-block"
+            class="dark:bg-gray-900 inline-block px-5 ml-8 text-2xl font-bold uppercase bg-gray-200"
           >
             <span class="text-secondry">Games</span>
             <!-- -->Hot
           </p>
         </div>
         <div class="lg:grid-cols-2 grid gap-5 overflow-hidden">
-          <div class="rounded-xl bg-white max-h-[560px]">
+          <div
+            class="rounded-xl bg-white max-h-[560px] dark:bg-dark-bg-primary dark:border border-dark-border"
+          >
             <div class="rounded-xl hover-animation group">
               <img
                 src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1730763397"
@@ -709,7 +763,7 @@
                 class="group-hover:scale-105 object-cover w-full transition-all"
               />
             </div>
-            <div class="px-6 text-blue-700">
+            <div class="px-6">
               <a href="./game" class="py-7 block text-xl font-bold"
                 >forza horizon 5</a
               >
@@ -721,7 +775,7 @@
               </p>
               <a
                 href="./game"
-                class="w-fit hover:bg-blue-700 hover:text-white block px-5 py-2 my-4 border border-blue-700 rounded-lg"
+                class="w-fit hover:bg-blue-700 hover:text-white dark:border-white block px-5 py-2 my-4 border border-blue-700 rounded-lg"
                 >xem bài này</a
               >
             </div>
@@ -730,7 +784,7 @@
             <div></div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -752,7 +806,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -774,7 +828,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -796,7 +850,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -818,7 +872,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -840,7 +894,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -862,7 +916,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -884,7 +938,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -906,7 +960,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -928,7 +982,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -950,7 +1004,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -972,7 +1026,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -994,7 +1048,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -1016,7 +1070,7 @@
             </div>
             <div>
               <div
-                class="rounded-xl flex items-center gap-5 p-3 bg-white border"
+                class="rounded-xl dark:bg-dark-bg-primary dark:border-dark-border flex items-center gap-5 p-3 bg-white border"
               >
                 <div class="hover-animation group">
                   <img
@@ -1042,14 +1096,14 @@
       <section class="py-10">
         <div class="relative flex items-center justify-between mb-6" id="span">
           <p
-            class="text-2xl font-bold px-5 bg-gray-200 ml-8 uppercase inline-block"
+            class="dark:bg-gray-900 inline-block px-5 ml-8 text-2xl font-bold uppercase bg-gray-200"
           >
             <span class="text-secondry">Games</span>
             <!-- -->Update version
           </p>
           <a
             href="#"
-            class="text-primary flex px-5 text-sm font-bold bg-gray-200"
+            class="text-primary dark:text-white dark:bg-gray-900 flex px-5 text-sm font-bold bg-gray-200"
             ><p class="hover:text-secondry">Xem tất cả</p>
             <svg
               aria-hidden="true"
@@ -1107,7 +1161,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1136,7 +1190,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1158,7 +1212,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1238,7 +1292,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1267,7 +1321,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1289,7 +1343,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1350,7 +1404,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1379,7 +1433,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1401,7 +1455,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1481,7 +1535,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1510,7 +1564,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1532,7 +1586,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1559,14 +1613,14 @@
       <section class="py-10">
         <div class="relative flex items-center justify-between mb-6" id="span">
           <p
-            class="text-2xl font-bold px-5 bg-gray-200 ml-8 uppercase inline-block"
+            class="dark:bg-gray-900 inline-block px-5 ml-8 text-2xl font-bold uppercase bg-gray-200"
           >
             <span class="text-secondry">Games</span>
             <!-- -->update việt hóa
           </p>
           <a
             href="#"
-            class="text-primary flex px-5 text-sm font-bold bg-gray-200"
+            class="text-primary dark:text-white dark:bg-gray-900 flex px-5 text-sm font-bold bg-gray-200"
             ><p class="hover:text-secondry">Xem tất cả</p>
             <svg
               aria-hidden="true"
@@ -1624,7 +1678,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1653,7 +1707,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1675,7 +1729,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1755,7 +1809,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1784,7 +1838,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1806,7 +1860,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1867,7 +1921,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -1896,7 +1950,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -1918,7 +1972,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -1998,7 +2052,7 @@
             <div>
               <a
                 href="#"
-                class="hover:text-secondry block text-xl font-bold truncate"
+                class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                 >tower factory</a
               >
               <div class="line-clamp-2 py-1 space-x-1">
@@ -2027,7 +2081,7 @@
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <button
-                  class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                  class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                 >
                   <a href="#" class="block text-white uppercase"
                     ><svg
@@ -2049,7 +2103,7 @@
                   >
                 </button>
                 <div
-                  class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                  class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                 >
                   <svg
                     aria-hidden="true"
@@ -2080,14 +2134,14 @@
             id="span"
           >
             <p
-              class="text-2xl font-bold px-5 bg-gray-200 ml-8 uppercase inline-block"
+              class="dark:bg-gray-900 inline-block px-5 ml-8 text-2xl font-bold uppercase bg-gray-200"
             >
               <span class="text-secondry">Games</span>
               <!-- -->Sắp phát hành
             </p>
             <a
               href="#"
-              class="text-primary flex px-5 text-sm font-bold bg-gray-200"
+              class="text-primary dark:text-white dark:bg-gray-900 flex px-5 text-sm font-bold bg-gray-200"
               ><p class="hover:text-secondry">Xem tất cả</p>
               <svg
                 aria-hidden="true"
@@ -2146,7 +2200,7 @@
                 <div>
                   <a
                     href="#"
-                    class="hover:text-secondry block text-xl font-bold truncate"
+                    class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                     >tower factory</a
                   >
                   <div class="line-clamp-2 py-1 space-x-1">
@@ -2176,7 +2230,7 @@
                   </div>
                   <div class="grid grid-cols-2 gap-3">
                     <button
-                      class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                      class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                     >
                       <a href="#" class="block text-white uppercase"
                         ><svg
@@ -2198,7 +2252,7 @@
                       >
                     </button>
                     <div
-                      class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                      class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                     >
                       <svg
                         aria-hidden="true"
@@ -2278,7 +2332,7 @@
                 <div>
                   <a
                     href="#"
-                    class="hover:text-secondry block text-xl font-bold truncate"
+                    class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                     >tower factory</a
                   >
                   <div class="line-clamp-2 py-1 space-x-1">
@@ -2308,7 +2362,7 @@
                   </div>
                   <div class="grid grid-cols-2 gap-3">
                     <button
-                      class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                      class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                     >
                       <a href="#" class="block text-white uppercase"
                         ><svg
@@ -2330,7 +2384,7 @@
                       >
                     </button>
                     <div
-                      class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                      class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                     >
                       <svg
                         aria-hidden="true"
@@ -2391,7 +2445,7 @@
                 <div>
                   <a
                     href="#"
-                    class="hover:text-secondry block text-xl font-bold truncate"
+                    class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                     >tower factory</a
                   >
                   <div class="line-clamp-2 py-1 space-x-1">
@@ -2421,7 +2475,7 @@
                   </div>
                   <div class="grid grid-cols-2 gap-3">
                     <button
-                      class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                      class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                     >
                       <a href="#" class="block text-white uppercase"
                         ><svg
@@ -2443,7 +2497,7 @@
                       >
                     </button>
                     <div
-                      class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                      class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                     >
                       <svg
                         aria-hidden="true"
@@ -2523,7 +2577,7 @@
                 <div>
                   <a
                     href="#"
-                    class="hover:text-secondry block text-xl font-bold truncate"
+                    class="hover:text-secondry dark:text-secondry dark:hover:text-white block text-xl font-bold truncate"
                     >tower factory</a
                   >
                   <div class="line-clamp-2 py-1 space-x-1">
@@ -2553,7 +2607,7 @@
                   </div>
                   <div class="grid grid-cols-2 gap-3">
                     <button
-                      class="hover:bg-secondry flex items-center px-4 py-2 bg-black rounded"
+                      class="hover:bg-secondry dark:bg-dark-bg-secondary flex items-center px-4 py-2 bg-black rounded"
                     >
                       <a href="#" class="block text-white uppercase"
                         ><svg
@@ -2575,7 +2629,7 @@
                       >
                     </button>
                     <div
-                      class="flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
+                      class="dark:bg-dark-bg-secondary flex items-center justify-center gap-3 px-4 py-2 text-xs font-semibold text-white bg-black rounded"
                     >
                       <svg
                         aria-hidden="true"
@@ -2601,14 +2655,14 @@
           </div>
           <div class="relative mb-6" id="span-title">
             <span
-              class="w-fit flex items-center gap-1 px-5 ml-8 text-2xl font-bold uppercase bg-gray-200"
+              class="w-fit dark:bg-gray-900 flex items-center gap-1 px-5 ml-8 text-2xl font-bold uppercase bg-gray-200"
               >Thủ thuật
               <p class="text-[#f15a24]">mới nhất</p></span
             >
           </div>
           <div class="py-8">
             <div class="lg:grid-cols-3 grid grid-cols-2 gap-6">
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2620,7 +2674,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2632,7 +2686,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2644,7 +2698,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2656,7 +2710,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2668,7 +2722,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2680,7 +2734,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2692,7 +2746,7 @@
                   >steam và những điều cần biết khi sử dụng</a
                 >
               </div>
-              <div class="text-primary">
+              <div class="">
                 <div class="hover-animation group rounded-md">
                   <img
                     src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/09/dang-ky-steam-gamelade.jpg"
@@ -2714,7 +2768,9 @@
             >
               Game sắp phát hành
             </h4>
-            <div class="p-4 bg-white divide-y divide-black">
+            <div
+              class="dark:bg-dark-bg-primary dark:divide-dark-border p-4 bg-white divide-y divide-black"
+            >
               <div class="py-2.5">
                 <div class="pt-5 pb-2.5">
                   <div class="hover-animation group rounded-lg">
@@ -2726,7 +2782,7 @@
                   </div>
                   <a
                     href="#"
-                    class="hover:text-secondry block pt-2 text-sm font-bold text-center"
+                    class="hover:text-secondry dark:text-secondry block pt-2 text-sm font-bold text-center"
                     >Homeworld 3 Việt hóa</a
                   >
                 </div>
@@ -2745,7 +2801,7 @@
                   <div>
                     <a
                       href="#"
-                      class="hover:text-secondry block mb-3 text-sm font-bold"
+                      class="hover:text-secondry dark:text-secondry block mb-3 text-sm font-bold"
                       >Homeworld 3 Việt hóa</a
                     ><span class="flex items-center gap-1 text-[13px]"
                       ><svg
@@ -2782,7 +2838,7 @@
                   <div>
                     <a
                       href="#"
-                      class="hover:text-secondry block mb-3 text-sm font-bold"
+                      class="hover:text-secondry dark:text-secondry block mb-3 text-sm font-bold"
                       >Homeworld 3 Việt hóa</a
                     ><span class="flex items-center gap-1 text-[13px]"
                       ><svg
@@ -2819,7 +2875,7 @@
                   <div>
                     <a
                       href="#"
-                      class="hover:text-secondry block mb-3 text-sm font-bold"
+                      class="hover:text-secondry dark:text-secondry block mb-3 text-sm font-bold"
                       >Homeworld 3 Việt hóa</a
                     ><span class="flex items-center gap-1 text-[13px]"
                       ><svg
@@ -2856,7 +2912,7 @@
                   <div>
                     <a
                       href="#"
-                      class="hover:text-secondry block mb-3 text-sm font-bold"
+                      class="hover:text-secondry dark:text-secondry block mb-3 text-sm font-bold"
                       >Homeworld 3 Việt hóa</a
                     ><span class="flex items-center gap-1 text-[13px]"
                       ><svg
@@ -2893,7 +2949,7 @@
                   <div>
                     <a
                       href="#"
-                      class="hover:text-secondry block mb-3 text-sm font-bold"
+                      class="hover:text-secondry dark:text-secondry block mb-3 text-sm font-bold"
                       >Homeworld 3 Việt hóa</a
                     ><span class="flex items-center gap-1 text-[13px]"
                       ><svg
@@ -2918,7 +2974,9 @@
               </div>
             </div>
           </div>
-          <div class="overflow-hidden border rounded-lg">
+          <div
+            class="dark:border-dark-border overflow-hidden border rounded-lg"
+          >
             <button
               type="button"
               aria-hidden="true"
@@ -2937,7 +2995,7 @@
               "
             ></button>
             <div>
-              <div class="border-b border-gray-200">
+              <div class="dark:border-dark-border border-b border-gray-200">
                 <div
                   class="bg-primary grid grid-cols-2"
                   role="tablist"
@@ -2945,7 +3003,7 @@
                 >
                   <button
                     class="flex justify-center items-center whitespace-nowrap border-b-4 border-transparent text-base py-3 font-medium text-white data-[selected]:bg-orange-600"
-                    id="headlessui-tabs-tab-:R1danrlb:"
+                    id="headlessui-tabs-tab-:R5lavelb:"
                     role="tab"
                     type="button"
                     aria-selected="true"
@@ -2956,7 +3014,7 @@
                     Update version&amp;dlc</button
                   ><button
                     class="flex justify-center items-center whitespace-nowrap border-b-4 border-transparent text-base py-3 font-medium text-white data-[selected]:bg-orange-600"
-                    id="headlessui-tabs-tab-:R2danrlb:"
+                    id="headlessui-tabs-tab-:R9lavelb:"
                     role="tab"
                     type="button"
                     aria-selected="false"
@@ -2968,18 +3026,16 @@
                 </div>
               </div>
               <div
-                id="headlessui-tabs-panel-:R1lanrlb:"
+                id="headlessui-tabs-panel-:R6lavelb:"
                 role="tabpanel"
                 tabindex="0"
                 data-headlessui-state="selected"
                 data-selected=""
               >
                 <div
-                  class="border bg-white px-2.5 pb-2.5 divide-y divide-black"
+                  class="border bg-white px-2.5 pb-2.5 divide-y divide-black dark:bg-dark-bg-primary dark:border-dark-border dark:divide-dark-border"
                 >
-                  <div
-                    class="first:mt-0 text-primary flex items-center gap-3 pt-3 mt-6"
-                  >
+                  <div class="first:mt-0 flex items-center gap-3 pt-3 mt-6">
                     <div class="overflow-hidden">
                       <img
                         src="https://i.pinimg.com/736x/7e/b7/b7/7eb7b7afca6bbc224d8e9c0f94e56a86.jpg"
@@ -2990,7 +3046,9 @@
                       />
                     </div>
                     <div>
-                      <a href="#" class="hover:text-secondry text-sm font-bold"
+                      <a
+                        href="#"
+                        class="hover:text-secondry dark:text-secondry text-sm font-bold"
                         >Homeworld 3 Việt hóa</a
                       ><span class="flex items-center gap-1 text-[13px]"
                         ><svg
@@ -3012,9 +3070,7 @@
                       >
                     </div>
                   </div>
-                  <div
-                    class="first:mt-0 text-primary flex items-center gap-3 pt-3 mt-6"
-                  >
+                  <div class="first:mt-0 flex items-center gap-3 pt-3 mt-6">
                     <div class="overflow-hidden">
                       <img
                         src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/header.jpg?t=1729879364"
@@ -3025,7 +3081,9 @@
                       />
                     </div>
                     <div>
-                      <a href="#" class="hover:text-secondry text-sm font-bold"
+                      <a
+                        href="#"
+                        class="hover:text-secondry dark:text-secondry text-sm font-bold"
                         >Homeworld 3 Việt hóa</a
                       ><span class="flex items-center gap-1 text-[13px]"
                         ><svg
@@ -3047,9 +3105,7 @@
                       >
                     </div>
                   </div>
-                  <div
-                    class="first:mt-0 text-primary flex items-center gap-3 pt-3 mt-6"
-                  >
+                  <div class="first:mt-0 flex items-center gap-3 pt-3 mt-6">
                     <div class="overflow-hidden">
                       <img
                         src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/header.jpg?t=1729879364"
@@ -3060,7 +3116,9 @@
                       />
                     </div>
                     <div>
-                      <a href="#" class="hover:text-secondry text-sm font-bold"
+                      <a
+                        href="#"
+                        class="hover:text-secondry dark:text-secondry text-sm font-bold"
                         >Homeworld 3 Việt hóa</a
                       ><span class="flex items-center gap-1 text-[13px]"
                         ><svg
@@ -3082,9 +3140,7 @@
                       >
                     </div>
                   </div>
-                  <div
-                    class="first:mt-0 text-primary flex items-center gap-3 pt-3 mt-6"
-                  >
+                  <div class="first:mt-0 flex items-center gap-3 pt-3 mt-6">
                     <div class="overflow-hidden">
                       <img
                         src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/header.jpg?t=1729879364"
@@ -3095,7 +3151,9 @@
                       />
                     </div>
                     <div>
-                      <a href="#" class="hover:text-secondry text-sm font-bold"
+                      <a
+                        href="#"
+                        class="hover:text-secondry dark:text-secondry text-sm font-bold"
                         >Homeworld 3 Việt hóa</a
                       ><span class="flex items-center gap-1 text-[13px]"
                         ><svg
@@ -3117,9 +3175,7 @@
                       >
                     </div>
                   </div>
-                  <div
-                    class="first:mt-0 text-primary flex items-center gap-3 pt-3 mt-6"
-                  >
+                  <div class="first:mt-0 flex items-center gap-3 pt-3 mt-6">
                     <div class="overflow-hidden">
                       <img
                         src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/header.jpg?t=1729879364"
@@ -3130,7 +3186,9 @@
                       />
                     </div>
                     <div>
-                      <a href="#" class="hover:text-secondry text-sm font-bold"
+                      <a
+                        href="#"
+                        class="hover:text-secondry dark:text-secondry text-sm font-bold"
                         >Homeworld 3 Việt hóa</a
                       ><span class="flex items-center gap-1 text-[13px]"
                         ><svg
@@ -3152,9 +3210,7 @@
                       >
                     </div>
                   </div>
-                  <div
-                    class="first:mt-0 text-primary flex items-center gap-3 pt-3 mt-6"
-                  >
+                  <div class="first:mt-0 flex items-center gap-3 pt-3 mt-6">
                     <div class="overflow-hidden">
                       <img
                         src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1840080/header.jpg?t=1729879364"
@@ -3165,7 +3221,9 @@
                       />
                     </div>
                     <div>
-                      <a href="#" class="hover:text-secondry text-sm font-bold"
+                      <a
+                        href="#"
+                        class="hover:text-secondry dark:text-secondry text-sm font-bold"
                         >Homeworld 3 Việt hóa</a
                       ><span class="flex items-center gap-1 text-[13px]"
                         ><svg
@@ -3191,7 +3249,7 @@
               </div>
               <span
                 aria-hidden="true"
-                id="headlessui-tabs-panel-:R2lanrlb:"
+                id="headlessui-tabs-panel-:Ralavelb:"
                 role="tabpanel"
                 tabindex="-1"
                 style="
@@ -3213,7 +3271,7 @@
         </section>
       </article>
       <div
-        class="p-4 mt-8 font-medium bg-white border-l-4 border-orange-600 rounded"
+        class="dark:bg-dark-bg-primary p-4 mt-8 font-medium bg-white border-l-4 border-orange-600 rounded"
       >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione
@@ -3271,7 +3329,7 @@
         </div>
       </div>
     </div>
-    <div class="fixed bottom-5 left-5 text-white flex flex-col gap-1">
+    <div class="bottom-5 left-5 fixed flex flex-col gap-1 text-white">
       <a href="#" class="py-1.5 px-4 w-fit bg-blue-600 rounded"
         >Báo lỗi Nạp VIP</a
       ><a href="#" class="py-1.5 px-4 w-fit bg-red-600 rounded"
@@ -3282,7 +3340,7 @@
     </div>
     <article>
       <section
-        class="border-secondry text-primary pt-14 grid lg:grid-cols-3 gap-6 pb-4 mt-12 border-t-4"
+        class="border-secondry pt-14 lg:grid-cols-3 grid gap-6 pb-4 mt-12 border-t-4"
       >
         <div class="space-y-6">
           <div class="flex items-center gap-1">
@@ -3368,7 +3426,7 @@
         </div>
         <div>
           <div>
-            <h3 class="text-xl font-bold uppercase">
+            <h3 class="dark:text-secondry text-xl font-bold uppercase">
               Chính sách &amp; điều khoản
             </h3>
             <ul class="pl-6 text-lg font-semibold list-disc">
@@ -3382,7 +3440,9 @@
             </ul>
           </div>
           <div>
-            <h3 class="text-xl font-bold uppercase">DANH MỤC YÊU THÍCH</h3>
+            <h3 class="dark:text-secondry text-xl font-bold uppercase">
+              DANH MỤC YÊU THÍCH
+            </h3>
             <ul class="pl-6 text-lg font-semibold list-disc">
               <li>Game tải nhiều nhất</li>
               <li>Game Việt Hóa</li>
@@ -3404,21 +3464,33 @@
             class="w-full h-[89px] object-cover"
           />
           <div class="mt-10">
-            <h3 class="font-bold uppercase">Mục xem nhiều</h3>
+            <h3 class="dark:text-secondry font-bold uppercase">
+              Mục xem nhiều
+            </h3>
             <div class="divide-primary mt-4 divide-y">
-              <a href="" class="flex items-center justify-between py-1.5"
+              <a
+                href=""
+                class="flex items-center justify-between py-1.5 hover:text-secondry"
                 ><p>game việt hóa</p>
                 <p>`(5.000.000 views - 938 bài)`</p></a
-              ><a href="" class="flex items-center justify-between py-1.5"
+              ><a
+                href=""
+                class="flex items-center justify-between py-1.5 hover:text-secondry"
                 ><p>game việt hóa</p>
                 <p>`(5.000.000 views - 938 bài)`</p></a
-              ><a href="" class="flex items-center justify-between py-1.5"
+              ><a
+                href=""
+                class="flex items-center justify-between py-1.5 hover:text-secondry"
                 ><p>game việt hóa</p>
                 <p>`(5.000.000 views - 938 bài)`</p></a
-              ><a href="" class="flex items-center justify-between py-1.5"
+              ><a
+                href=""
+                class="flex items-center justify-between py-1.5 hover:text-secondry"
                 ><p>game việt hóa</p>
                 <p>`(5.000.000 views - 938 bài)`</p></a
-              ><a href="" class="flex items-center justify-between py-1.5"
+              ><a
+                href=""
+                class="flex items-center justify-between py-1.5 hover:text-secondry"
                 ><p>game việt hóa</p>
                 <p>`(5.000.000 views - 938 bài)`</p></a
               >
@@ -3426,7 +3498,7 @@
           </div>
         </div>
       </section>
-      <div class="text-center text-xs font-medium">
+      <div class="text-xs font-medium text-center">
         <p>
           ❤️ Copyright © 2018 - CHÚNG TÔI CHỈ CÓ 2 WEBSITE DAOMINHHA.NET &amp;
           DIXGAMES.COM ❤️ KHÔNG LIÊN QUAN ĐẾN BẤT KỲ WEBSITE KHÁC
@@ -3443,26 +3515,26 @@
     <script>
       self.__next_f.push([
         1,
-        '2:"$Sreact.fragment"\n3:I[4720,["676","static/chunks/870fdd6f-0ca00b8ee6c5b509.js","501","static/chunks/c16f53c3-7ed00420f56d2053.js","920","static/chunks/920-c497346d45a9deb4.js","376","static/chunks/376-3679bda538912397.js","805","static/chunks/805-2eedd134218e842b.js","185","static/chunks/app/layout-f9a2754a9146a50f.js"],"default"]\n4:I[9275,[],""]\n5:I[1343,[],""]\n6:I[6513,[],"ClientPageRoot"]\n7:I[8240,["676","static/chunks/870fdd6f-0ca00b8ee6c5b509.js","920","static/chunks/920-c497346d45a9deb4.js","376","static/chunks/376-3679bda538912397.js","375","static/chunks/375-3efc23e3c3da1813.js","256","static/chunks/app/(Home)/page-109f4d0b86997f78.js"],"default"]\na:I[3120,[],"OutletBoundary"]\nc:I[3120,[],"MetadataBoundary"]\ne:I[3120,[],"ViewportBoundary"]\n10:I[6130,[],""]\n1:HL["./_next/static/css/9ded0e6310707dc4.css","style"]\n',
+        '2:"$Sreact.fragment"\n3:I[9512,["676","static/chunks/870fdd6f-0ca00b8ee6c5b509.js","501","static/chunks/c16f53c3-794864bdae64fcce.js","920","static/chunks/920-42150e76bc8c1f3a.js","376","static/chunks/376-21af4e3d88e18d2f.js","836","static/chunks/836-ed43ac3c8bb5628c.js","185","static/chunks/app/layout-6cb6c8635beb10c3.js"],"ThemeProvider"]\n4:I[4720,["676","static/chunks/870fdd6f-0ca00b8ee6c5b509.js","501","static/chunks/c16f53c3-794864bdae64fcce.js","920","static/chunks/920-42150e76bc8c1f3a.js","376","static/chunks/376-21af4e3d88e18d2f.js","836","static/chunks/836-ed43ac3c8bb5628c.js","185","static/chunks/app/layout-6cb6c8635beb10c3.js"],"default"]\n5:I[9275,[],""]\n6:I[1343,[],""]\n7:I[6513,[],"ClientPageRoot"]\n8:I[8240,["676","static/chunks/870fdd6f-0ca00b8ee6c5b509.js","920","static/chunks/920-42150e76bc8c1f3a.js","376","static/chunks/376-21af4e3d88e18d2f.js","375","static/chunks/375-245df6e7a52cd19f.js","256","static/chunks/app/(Home)/page-53f606383d43dc67.js"],"default"]\nb:I[3120,[],"OutletBoundary"]\nd:I[3120,[],"MetadataBoundary"]\nf:I[3120,[],"ViewportBoundary"]\n11:I[6130,[],""]\n1:HL["./_next/static/css/adc67e1e93fa1405.css","style"]\n',
       ]);
     </script>
     <script>
       self.__next_f.push([
         1,
-        '0:{"P":null,"b":"dzrfqJbzXQhfN0l6giXDb","p":".","c":["",""],"i":false,"f":[[["",{"children":["(Home)",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$2","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"./_next/static/css/9ded0e6310707dc4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"w-[95%] lg:w-[90%] mx-auto py-5 bg-gray-200 text-primary relative","children":[["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","div",null,{"className":"fixed bottom-5 left-5 text-white flex flex-col gap-1","children":[["$","a",null,{"href":"#","className":"py-1.5 px-4 w-fit bg-blue-600 rounded","children":"Báo lỗi Nạp VIP"}],["$","a",null,{"href":"#","className":"py-1.5 px-4 w-fit bg-red-600 rounded","children":"Báo lỗi Link VIP"}],["$","a",null,{"href":"#","className":"py-1.5 px-4 w-fit bg-green-600 rounded","children":"Nhóm hỗ trợ cài đặt"}]]}],["$","article",null,{"children":[["$","section",null,{"className":"border-secondry text-primary pt-14 grid lg:grid-cols-3 gap-6 pb-4 mt-12 border-t-4","children":[["$","div",null,{"className":"space-y-6","children":[["$","div",null,{"className":"flex items-center gap-1","children":[["$","img",null,{"src":"https://plus.unsplash.com/premium_photo-1728384290756-4f884c9c6812?q=80\u0026w=2007\u0026auto=format\u0026fit=crop\u0026ixlib=rb-4.0.3\u0026ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","alt":"","className":"size-8 object-cover rounded-full"}],["$","p",null,{"className":"text-3xl font-extrabold text-red-900","children":["Daominhha",["$","span",null,{"className":"text-2xl text-gray-300","children":".net"}]]}]]}],["$","p",null,{"className":"text-xl","children":[["$","strong",null,{"className":"font-semibold","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"heart","className":"svg-inline--fa fa-heart size-4 text-red-700","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"ref":"$undefined","children":["$","path",null,{"fill":"currentColor","d":"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z","style":{}}]}]," ","Daominhha.net \u0026 Dixgames.com"]}],": Chúng tôi chỉ có 2 website này là website Tải Game Việt Hóa Miễn Phí Tốc độ cao mới nhất , Full Kích Hoạt , Full DLC , Full Mods … chia sẻ những thủ thuật về game và công nghệ . Không liên quan đến bất kỳ website khác."]}],["$","p",null,{"className":"text-xl","children":["Ngoài ra"," ",["$","strong",null,{"className":"font-semibold","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"heart","className":"svg-inline--fa fa-heart size-4 text-red-700","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"ref":"$undefined","children":["$","path",null,{"fill":"currentColor","d":"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z","style":{}}]}]," ","Daominhha.net \u0026 Dixgames.com"]}]," ","còn cung cấp cho anh em một nơi tải Phần Mềm Miễn Phí Chất Lượng Cao . Với Phương Châm ” Chia sẻ miễn phí tất cả “"]}],["$","p",null,{"className":"text-xl","children":[["$","strong",null,{"className":"font-semibold","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"heart","className":"svg-inline--fa fa-heart size-4 text-red-700","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"ref":"$undefined","children":["$","path",null,{"fill":"currentColor","d":"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z","style":{}}]}]," ","Daominhha.net \u0026 Dixgames.com"]}]," ","là website độc lập hoàn toàn không có liên quan đến bất kỳ một website nào khác . Chúng tôi là một website riêng biệt . Chúng tôi với quan niệm sẽ là một cộng đồng sạch sẽ , ko toxic , là một nơi chia sẻ hỗ trợ tận tâm nhất"]}]]}],["$","div",null,{"children":[["$","div",null,{"children":[["$","h3",null,{"className":"text-xl font-bold uppercase","children":"Chính sách \u0026 điều khoản"}],["$","ul",null,{"className":"pl-6 text-lg font-semibold list-disc","children":[["$","li",null,{"children":"Giới thiệu về daominhha.net"}],["$","li",null,{"children":"Chính sách bảo mật"}],["$","li",null,{"children":"Điều khoản sử dụng"}],["$","li",null,{"children":"Câu hỏi thường gặp"}],["$","li",null,{"children":"Nạp Donate Tải link VIP"}],["$","li",null,{"children":"Làm Nhiệm vụ Tải Vip Miễn Phí"}],["$","li",null,{"children":"Liên hệ"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-xl font-bold uppercase","children":"DANH MỤC YÊU THÍCH"}],["$","ul",null,{"className":"pl-6 text-lg font-semibold list-disc","children":[["$","li",null,{"children":"Game tải nhiều nhất"}],["$","li",null,{"children":"Game Việt Hóa"}],["$","li",null,{"children":"Phần mềm Full Active"}]]}]]}],["$","img",null,{"src":"https://mona.media/wp-content/uploads/2021/09/dmca-protected.png","alt":"","width":121,"height":55,"className":"mt-6"}]]}],["$","div",null,{"className":"text-xl","children":[["$","img",null,{"src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIYZoN-v60qelJBrnr9iXZPNLjfta92YHTkA\u0026s","alt":"","className":"w-full h-[89px] object-cover"}],["$","div",null,{"className":"mt-10","children":[["$","h3",null,{"className":"font-bold uppercase","children":"Mục xem nhiều"}],["$","div",null,{"className":"divide-primary mt-4 divide-y","children":[["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}]]}]]}]]}]]}],["$","div",null,{"className":"text-center text-xs font-medium","children":["$","p",null,{"children":"❤️ Copyright © 2018 - CHÚNG TÔI CHỈ CÓ 2 WEBSITE DAOMINHHA.NET \u0026 DIXGAMES.COM ❤️ KHÔNG LIÊN QUAN ĐẾN BẤT KỲ WEBSITE KHÁC"}]}]]}]]}]}]]}],{"children":["(Home)",["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","(Home)","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:f:0:1:1:props:children:1:props:children:props:children:1:props:notFound:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:f:0:1:1:props:children:1:props:children:props:children:1:props:notFound:1:props:children:props:children:1:props:style","children":"404"}],["$","div",null,{"style":"$0:f:0:1:1:props:children:1:props:children:props:children:1:props:notFound:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:f:0:1:1:props:children:1:props:children:props:children:1:props:notFound:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}],{"children":["__PAGE__",["$","$2","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],null,["$","$La",null,{"children":"$Lb"}]]}],{},null]},null]},null],["$","$2","h",{"children":[null,["$","$2","bz49Uf1T2ElzKPFebUA5-",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","$Le",null,{"children":"$Lf"}],null]}]]}]]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}\n',
+        '0:{"P":null,"b":"PRSczQpWLg6nUgbOboZJZ","p":".","c":["",""],"i":false,"f":[[["",{"children":["(Home)",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$2","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"./_next/static/css/adc67e1e93fa1405.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"w-[95%] lg:w-[90%] mx-auto py-5 bg-gray-200 dark:bg-gray-900 text-primary dark:text-white relative","children":["$","$L3",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L4",null,{}],["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","div",null,{"className":"bottom-5 left-5 fixed flex flex-col gap-1 text-white","children":[["$","a",null,{"href":"#","className":"py-1.5 px-4 w-fit bg-blue-600 rounded","children":"Báo lỗi Nạp VIP"}],["$","a",null,{"href":"#","className":"py-1.5 px-4 w-fit bg-red-600 rounded","children":"Báo lỗi Link VIP"}],["$","a",null,{"href":"#","className":"py-1.5 px-4 w-fit bg-green-600 rounded","children":"Nhóm hỗ trợ cài đặt"}]]}],["$","article",null,{"children":[["$","section",null,{"className":"border-secondry pt-14 lg:grid-cols-3 grid gap-6 pb-4 mt-12 border-t-4","children":[["$","div",null,{"className":"space-y-6","children":[["$","div",null,{"className":"flex items-center gap-1","children":[["$","img",null,{"src":"https://plus.unsplash.com/premium_photo-1728384290756-4f884c9c6812?q=80\u0026w=2007\u0026auto=format\u0026fit=crop\u0026ixlib=rb-4.0.3\u0026ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","alt":"","className":"size-8 object-cover rounded-full"}],["$","p",null,{"className":"text-3xl font-extrabold text-red-900","children":["Daominhha",["$","span",null,{"className":"text-2xl text-gray-300","children":".net"}]]}]]}],["$","p",null,{"className":"text-xl","children":[["$","strong",null,{"className":"font-semibold","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"heart","className":"svg-inline--fa fa-heart size-4 text-red-700","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"ref":"$undefined","children":["$","path",null,{"fill":"currentColor","d":"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z","style":{}}]}]," ","Daominhha.net \u0026 Dixgames.com"]}],": Chúng tôi chỉ có 2 website này là website Tải Game Việt Hóa Miễn Phí Tốc độ cao mới nhất , Full Kích Hoạt , Full DLC , Full Mods … chia sẻ những thủ thuật về game và công nghệ . Không liên quan đến bất kỳ website khác."]}],["$","p",null,{"className":"text-xl","children":["Ngoài ra"," ",["$","strong",null,{"className":"font-semibold","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"heart","className":"svg-inline--fa fa-heart size-4 text-red-700","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"ref":"$undefined","children":["$","path",null,{"fill":"currentColor","d":"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z","style":{}}]}]," ","Daominhha.net \u0026 Dixgames.com"]}]," ","còn cung cấp cho anh em một nơi tải Phần Mềm Miễn Phí Chất Lượng Cao . Với Phương Châm ” Chia sẻ miễn phí tất cả “"]}],["$","p",null,{"className":"text-xl","children":[["$","strong",null,{"className":"font-semibold","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"heart","className":"svg-inline--fa fa-heart size-4 text-red-700","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"ref":"$undefined","children":["$","path",null,{"fill":"currentColor","d":"M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z","style":{}}]}]," ","Daominhha.net \u0026 Dixgames.com"]}]," ","là website độc lập hoàn toàn không có liên quan đến bất kỳ một website nào khác . Chúng tôi là một website riêng biệt . Chúng tôi với quan niệm sẽ là một cộng đồng sạch sẽ , ko toxic , là một nơi chia sẻ hỗ trợ tận tâm nhất"]}]]}],["$","div",null,{"children":[["$","div",null,{"children":[["$","h3",null,{"className":"dark:text-secondry text-xl font-bold uppercase","children":"Chính sách \u0026 điều khoản"}],["$","ul",null,{"className":"pl-6 text-lg font-semibold list-disc","children":[["$","li",null,{"children":"Giới thiệu về daominhha.net"}],["$","li",null,{"children":"Chính sách bảo mật"}],["$","li",null,{"children":"Điều khoản sử dụng"}],["$","li",null,{"children":"Câu hỏi thường gặp"}],["$","li",null,{"children":"Nạp Donate Tải link VIP"}],["$","li",null,{"children":"Làm Nhiệm vụ Tải Vip Miễn Phí"}],["$","li",null,{"children":"Liên hệ"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"dark:text-secondry text-xl font-bold uppercase","children":"DANH MỤC YÊU THÍCH"}],["$","ul",null,{"className":"pl-6 text-lg font-semibold list-disc","children":[["$","li",null,{"children":"Game tải nhiều nhất"}],["$","li",null,{"children":"Game Việt Hóa"}],["$","li",null,{"children":"Phần mềm Full Active"}]]}]]}],["$","img",null,{"src":"https://mona.media/wp-content/uploads/2021/09/dmca-protected.png","alt":"","width":121,"height":55,"className":"mt-6"}]]}],["$","div",null,{"className":"text-xl","children":[["$","img",null,{"src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIYZoN-v60qelJBrnr9iXZPNLjfta92YHTkA\u0026s","alt":"","className":"w-full h-[89px] object-cover"}],["$","div",null,{"className":"mt-10","children":[["$","h3",null,{"className":"dark:text-secondry  font-bold uppercase","children":"Mục xem nhiều"}],["$","div",null,{"className":"divide-primary mt-4 divide-y","children":[["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5 hover:text-secondry","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5 hover:text-secondry","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5 hover:text-secondry","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5 hover:text-secondry","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}],["$","a",null,{"href":"","className":"flex items-center justify-between py-1.5 hover:text-secondry","children":[["$","p",null,{"children":"game việt hóa"}],["$","p",null,{"children":"`(5.000.000 views - 938 bài)`"}]]}]]}]]}]]}]]}],["$","div",null,{"className":"text-xs font-medium text-center","children":["$","p",null,{"children":"❤️ Copyright © 2018 - CHÚNG TÔI CHỈ CÓ 2 WEBSITE DAOMINHHA.NET \u0026 DIXGAMES.COM ❤️ KHÔNG LIÊN QUAN ĐẾN BẤT KỲ WEBSITE KHÁC"}]}]]}]]}]}]}]]}],{"children":["(Home)",["$","$2","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","(Home)","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:1:props:notFound:1:props:style","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:1:props:notFound:1:props:children:props:children:1:props:style","children":"404"}],["$","div",null,{"style":"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:1:props:notFound:1:props:children:props:children:2:props:style","children":["$","h2",null,{"style":"$0:f:0:1:1:props:children:1:props:children:props:children:props:children:1:props:notFound:1:props:children:props:children:2:props:children:props:style","children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]]}],{"children":["__PAGE__",["$","$2","c",{"children":[["$","$L7",null,{"Component":"$8","searchParams":{},"params":{},"promises":["$@9","$@a"]}],null,["$","$Lb",null,{"children":"$Lc"}]]}],{},null]},null]},null],["$","$2","h",{"children":[null,["$","$2","PiB0YUdoqCBkpxdXijAIA",{"children":[["$","$Ld",null,{"children":"$Le"}],["$","$Lf",null,{"children":"$L10"}],null]}]]}]]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}\n',
       ]);
     </script>
     <script>
-      self.__next_f.push([1, "8:{}\n9:{}\n"]);
+      self.__next_f.push([1, "9:{}\na:{}\n"]);
     </script>
     <script>
       self.__next_f.push([
         1,
-        'f:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\nd:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Web game"}],["$","meta","2",{"name":"description","content":"Generated by create next app"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]\n',
+        '10:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\ne:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Web game"}],["$","meta","2",{"name":"description","content":"Generated by create next app"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]\n',
       ]);
     </script>
     <script>
-      self.__next_f.push([1, "b:null\n"]);
+      self.__next_f.push([1, "c:null\n"]);
     </script>
   </body>
 </html>
